@@ -3,7 +3,7 @@
 
 # packnrun
 
-packnrun allows running Run an auto-pegi3s project (auto-phylo, auto-p2docking, auto-enrich, ...) on another computer, and get the results back.
+packnrun allows running an auto-pegi3s project (auto-phylo, auto-p2docking, auto-enrich, ...) on another computer, and get the results back.
 
 Given an image, a project folder and the access details of a remote computer, packnrun:
 
@@ -15,7 +15,7 @@ Given an image, a project folder and the access details of a remote computer, pa
 
 ## Remote computer requirements
 
-- An SSH server and Docker usable by your user **without sudo**. The needed pegi3s images are downloaded automatically.
+- An SSH server and Docker usable by your user **without sudo**. The needed pegi3s images are downloaded automatically. Nevertheless, in the case of auto-p2docking, due to legal restrictions regarding software distribution, the Docker images for hdock, haddock, and pydock must also be built in the remote computer the first time they are used.
 
 This can be achieved by running on the console of the remote computer the following commands (assuming the remote computer is running Ubuntu):
 
